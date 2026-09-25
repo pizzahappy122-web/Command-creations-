@@ -1,0 +1,2 @@
+execute as @a[scores={axe_click=1..}] run execute as @a[scores={axe_click=1..}] run summon minecraft:lightning_bolt ^ ^ ^3
+scoreboard players set @a[scores={axe_click=1..}] axe_click 0
