@@ -1,1 +1,2 @@
-/give @p iron_axe[custom_name='{"text":"Thor\'s Hammer","color":"aqua"}',unbreakable={},enchantments={sharpness:20,infinity:1}] 1
+/give @p iron_axe[custom_name='{"text":"Thor\'s Hammer","color":"aqua"}',unbreakable={},enchantments={sharpness:20}] 1
+
