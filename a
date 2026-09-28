@@ -1,0 +1,6 @@
+INIT:give @a[r=2] red_dye
+INIT:give @a[r=2] silverfish_spawn_egg
+execute at @e[type=minecraft:silverfish] run summon minecraft:armor_stand ~ ~-1.7 ~ {Tags:["tank"],Invisible:1b,Invulnerable:1b,NoGravity:1b} 
+kill @e[type=silverfish]
+IF:execute if entity @a[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run execute at @e[type=minecraft:armor_stand] run particle minecraft:ash ~ ~ ~ ~ ~ ~ 1 20 normal
+DO:execute at @e[type=minecraft:armor_stand,tag=tank] run tp @e[type=minecraft:armor_stand,tag=tank] ^ ^ ^1
